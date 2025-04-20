@@ -5,6 +5,7 @@ let db2=require("./model/model2.js")
 mongoose.connect("mongodb+srv://nodeuser:Yahoo123@cluster0.ag3fwai.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 let db=mongoose.connection;
 let app=express();
+app.use(express.json())
 db.once('open',()=>{
 console.log("database connected");
 })

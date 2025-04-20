@@ -1,6 +1,6 @@
-let db=require("/Users/aayushsharma/hostelprojet/mongoserver/model/model1.js");
-let db2=require("/Users/aayushsharma/hostelprojet/mongoserver/model/model2")
-let controller=require("/Users/aayushsharma/hostelprojet/mongoserver/controller.js")
+let db=require("../model/model1");
+let db2=require("../model/model2")
+let controller=require("../controller")
 let fs=require("fs")
 let multer=require("multer")
 let path=require("path")
