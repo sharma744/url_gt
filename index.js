@@ -12,16 +12,16 @@ console.log("database connected");
 db.on('error',()=>{
     console.log("data base coneection error");
 })
-let fn=async()=>{
-    for(let i=0;i<203;i++){
-       let room={
-        roomno:i+1
-       }
-        db2.insertOne(room);
+// let fn=async()=>{
+//     for(let i=0;i<203;i++){
+//        let room={
+//         roomno:i+1
+//        }
+//         db2.insertOne(room);
 
-}
-}
-fn();
+// }
+// }
+// fn();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 require("./routes/route1.js")(app);
