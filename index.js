@@ -1,8 +1,8 @@
 let mongoose=require("mongoose")
 let express=require("express")
 let db2=require("./model/model2.js")
-
-mongoose.connect("mongodb://localhost:27017/hostel");
+// const url=mongodb+srv://nodeuser:<db_password>@cluster0.ag3fwai.mongodb.net/
+mongoose.connect("mongodb+srv://nodeuser:Yahoo123@cluster0.ag3fwai.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 let db=mongoose.connection;
 let app=express();
 db.once('open',()=>{
