@@ -12,9 +12,9 @@ let fn=async()=>{
 }
 let fun=async()=>{
 // const url=mongodb+srv://nodeuser:<db_password>@cluster0.ag3fwai.mongodb.net/
- await mongoose.connect("mongodb+srv://nodeuser:Yahoo123@cluster0.ag3fwai.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+  mongoose.connect("mongodb+srv://nodeuser:Yahoo123@cluster0.ag3fwai.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 let db=mongoose.connection;
-await fn()
+fn()
 db.once('open',()=>{
 console.log("database connected");
 })
