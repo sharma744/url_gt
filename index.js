@@ -17,7 +17,7 @@ let fn=async()=>{
        let room={
         roomno:i+1
        }
-       await db2.insertOne(room);
+        db2.insertOne(room);
 
 }
 }
