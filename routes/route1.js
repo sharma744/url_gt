@@ -140,5 +140,5 @@ let func=(app)=>{
         
         
 }
-module.exports=func:
+module.exports=func;
    
