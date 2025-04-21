@@ -10,7 +10,7 @@ let cloudinary=require("cloudinary").v2
     api_secret: 'U6m71klfo3p3UfG3iGEIRW-6Hxo' // Click 'View API Keys' above to copy your API secret
 });
 let path=require("path")
-let func=(app)=>{
+exports.func=(app)=>{
     app.post("/postdata",async(req,res)=>{
         let header=await req.body;
        try{
@@ -140,5 +140,4 @@ let func=(app)=>{
         
         
 }
-    
-module.exports=func;
+   
