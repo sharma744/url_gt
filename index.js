@@ -20,13 +20,12 @@ console.log("database connected");
 db.on('error',()=>{
     console.log("data base coneection error");
 })
-let app=express();
+let app=express()
 app.use(express.json())
-app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 require("./routes/route1.js")(app);
 app.listen(3000,()=>{
     console.log("server connected succesfully");
 })
 }
-fun();
+fun()
