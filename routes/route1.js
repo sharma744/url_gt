@@ -118,7 +118,7 @@ let func=(app)=>{
       
     app.post("/fetchdata",upload.single("file"),controller.fetch,async(req,res,next)=>{
                console.log(req.data);
-               fs.unlinkSync(`/Users/aayushsharma/hostelprojet/mongoserver/upload/${name}`)
+               fs.unlinkSync(`./upload/${name}`);
                res.send((req.data));
     });
         
