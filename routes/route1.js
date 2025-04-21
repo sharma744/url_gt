@@ -127,7 +127,7 @@ let func=(app)=>{
        console.log(path)
         const uploadResult = await cloudinary.uploader
           .upload(req.file.path,{
-                  public_id: 'pdf',
+                  public_id:`${name}',
               }
           )
           .catch((error) => {
